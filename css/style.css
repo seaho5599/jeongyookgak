@@ -62,6 +62,7 @@ img {
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -70,6 +71,7 @@ body {
   font-size: 12px;
   letter-spacing: -0.32px;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 /* 공통 */
@@ -87,13 +89,40 @@ body {
   width: 100%;
   clear: both;
 }
+/* 팝업창 */
+.popup{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: radial-gradient(circle at 50% 527%,#ff896a,#e23000 119%);
+}
+.popup .inner{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: url('../images/popup.png') no-repeat center;
+  overflow: hidden;
+}
+.popup-close{
+  position: relative;
+  display: block;
+  width: 78px;
+  height: 60px;
+  float: right;
+  background: transparent;
+  cursor: pointer;
+}
 
 /* header */
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   display: block;
   height: 90px;
   background-color: #000;
+  z-index: 99;
 }
 
 .header .inner {
@@ -211,7 +240,14 @@ body {
   background: url(../images/allmenu.svg) no-repeat center;
   background-size: 45px;
 }
-
+@media all and (max-width:1000px){
+  .mainmenu{
+    display: none;
+  }
+  .submenu{
+    display: none;
+  }
+}
 
 /* viual */
 .viual {
@@ -221,6 +257,11 @@ body {
   background: url(../images/viual.png) no-repeat center;
   background-size: cover;
   margin-bottom: 48px;
+}
+@media all and (max-width:1000px){
+  .viual{
+    height: 47vw;
+  }
 }
 
 /* event */
@@ -292,15 +333,6 @@ body {
   background-size: cover;
 }
 
-.event-freshplane {
-  position: relative;
-  display: block;
-  width: 576px;
-  height: 176px;
-  background: url('../images/freshplan.png') no-repeat center;
-  background-size: cover;
-  float: left;
-}
 
 .sw-event-remote {
   position: absolute;
@@ -326,7 +358,7 @@ body {
   transform: rotate(180deg);
   border: 0;
   cursor: pointer;
-
+  
 }
 .sw-event-control-main{
   position: absolute;
@@ -350,6 +382,15 @@ body {
   font-weight: 700;
 }
 
+.event-freshplane {
+  position: relative;
+  display: block;
+  width: 576px;
+  height: 176px;
+  background: url('../images/freshplan.png') no-repeat center;
+  background-size: cover;
+  float: left;
+}
 
 /* items */
 .items {

@@ -11,4 +11,12 @@ window.onload = function () {
       nextEl: '.sw-event-next'
     },
   });
+
+  $(document).mouseup(function (e){
+    if($(".popup-close").has(e.target).length === 0){
+      $(".popup").hide();
+    }
+  });
+
+
 }

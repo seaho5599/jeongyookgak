@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel=icon href="images/favicon16.png" sizes=16x16>
+  <link rel=icon href="images/favicon32.png" sizes=32x32>
+  <link rel=icon href="images/favicon192.png" sizes=192x192>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>정육각 :: 언제나 초신선</title>
@@ -10,7 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- swiper -->
-    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+  <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
@@ -21,9 +24,12 @@
 <body>
   <!-- 전체 레이아웃 -->
   <!-- 팝업창 -->
-  <div class="popup"></div>
+  <div class="popup">
+    <div class="inner">
+      <div class="popup-close"></div>
+    </div>
+  </div>
   <div class="wrap">
-
     <!-- header -->
     <header class="header">
       <div class="inner">
@@ -169,8 +175,10 @@
           <div class="f-bottom-left">
             <ul class="f-info">
               <li class="f-logo"></li>
-              <li><span>(주)정육각</span> <span>대표이사: 김재연</span><span class="info-space-1">|</span> <span>주소: 경기도 김포시 고촌읍 아라육로57번길 126</span></li>
-              <li><span>사업자등록번호 : 224-87-00271</span> <a href="">[조회]</a><span class="info-space-2">|</span><span>통신판매업신고번호: 2021-경기김포-0668</span></li>
+              <li><span>(주)정육각</span> <span>대표이사: 김재연</span><span class="info-space-1">|</span> <span>주소: 경기도 김포시 고촌읍
+                  아라육로57번길 126</span></li>
+              <li><span>사업자등록번호 : 224-87-00271</span> <a href="">[조회]</a><span
+                  class="info-space-2">|</span><span>통신판매업신고번호: 2021-경기김포-0668</span></li>
               <li>개인정보관리책임자: 박준태(privacy@yookgak.com)</li>
               <li>© 2021 Jeongyookgak Inc. All rights reserved.</li>
             </ul>
@@ -186,8 +194,8 @@
             <p>카카오톡: <a href="#">@정육각</a></p>
             <p>이메일: <a href="#"> help@yookgak.com</a></p>
             <div class="f-button clearfix">
-              <button >자주묻는질문</button>
-              <button >1:1 문의</button>
+              <button>자주묻는질문</button>
+              <button>1:1 문의</button>
             </div>
           </div>
         </div>
