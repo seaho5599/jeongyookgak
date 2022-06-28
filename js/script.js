@@ -23,8 +23,21 @@ $(document).ready(function(){
     }
 
   });
-
-
+  let gnb_icons_allmenu = $('.gnb-icons-allmenu'); 
+  gnb_icons_allmenu.click(function (event) {
+    // a 태그의 href 를 막는다.
+    event.preventDefault();
+    // 메뉴 보여지는 과정
+    menu_more.addClass('menu-more-open');
+  });
+  let m_control_x = $('.m-control-x');
+  let menu_more = $('.menu-more');
+  m_control_x.click(function (event) {
+    // a 태그의 href 막아준다.
+    event.preventDefault();
+    // 사라지는 모션 실행
+    menu_more.removeClass('menu-more-open');
+  });
 
 
 });
