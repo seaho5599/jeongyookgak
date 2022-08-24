@@ -231,6 +231,12 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
+@media screen and (max-width:478px) {
+  .menu-more{
+    width: 100.42vw;
+  }
+  
+}
 /* 팝업창 */
 .popup {
   position: relative;
@@ -419,6 +425,7 @@ body {
 @media all and (max-width:1000px) {
   .viual {
     height: 47vw;
+    margin-bottom: 4.46vw;
   }
 }
 
@@ -554,12 +561,26 @@ body {
 }
 
 @media all and (max-width:1160px) {
+  .event{
+    margin-bottom: 7.27vw;
+  }
   .event-mainevent {
     width: 50vw;
+    /* background-size: 49.36vw; */
+  }
+  .sw-event-1, .sw-event-2, .sw-event-3, .sw-event-4, .sw-event-5, .sw-event-6, .sw-event-7{
+    background-size: 49.36vw;
   }
 
   .event-freshplane {
     width: 50vw;
+    background-size: 49.36vw;
+  }
+  .sw-event-remote{
+    width: 8.64vw;
+  }
+  .sw-event-next, .sw-event-prev{
+    width: 1.45vw;
   }
 }
 
@@ -593,7 +614,7 @@ body {
   display: block;
   float: left;
   margin-right: 36px;
-
+  
 
 }
 
@@ -602,8 +623,12 @@ body {
   display: block;
   width: 376px;
   height: 416px;
-  background-color: #f9f7f8;
+  background-color:#f9f7f8 !important;
   margin-bottom: 16px;
+}
+.items-img{
+  background: url(../images/item1.png) no-repeat center;
+  background-size: 276px;
 }
 
 .items-list li:nth-child(3) {
@@ -755,6 +780,12 @@ body {
 }
 
 @media all and (max-width:1000px) {
+  .banner{
+    margin-bottom: 11.3vw;
+  }
+  .banner .inner{
+    padding-top: 5vw;
+  }
   .banner-shop {
     height: 21vh;
   }
